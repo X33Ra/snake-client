@@ -9,6 +9,12 @@ const connect = function() {
   // interpret incoming data as text
   conn.setEncoding("utf-8");
 
+  // Notifys the user someone connected
+  conn.on('connect', () => {
+    console.log('Successfully connected to game server');
+    conn.write('Name: SNK'); // Send the string "Name: ___" to the server
+  });
+
   return conn;
 };
 
