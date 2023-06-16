@@ -1,7 +1,10 @@
 // establishes a connection with the game server
+// rule:
+// register it as the "data" callback handler for stdin.
+// handleUserInput should check for the ctrl + c input and terminate the game
+// Call setupInput from within play.js.
 
 // setup interface to handle user input from stdin
-// let connection; // Define a variable to store the connection object
 const handleUserInput = function(key, connection) {
   if (key === 'w') {
     console.log('Move: up');
@@ -32,10 +35,7 @@ const setupInput = function(connection) {
   return stdin;
 };
 
-// rule:
-// register it as the "data" callback handler for stdin.
-// handleUserInput should check for the ctrl + c input and terminate the game
-// Call setupInput from within play.js.
+
 
 
 
