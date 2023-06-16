@@ -13,6 +13,18 @@ const connect = function() {
   conn.on('connect', () => {
     console.log('Successfully connected to game server');
     conn.write('Name: SNK'); // Send the string "Name: ___" to the server
+
+    // Available move commands
+    const moves = ["Move: up", "Move: down", "Move: left", "Move: right"];
+
+    // Index to track the current move command
+    let moveIndex = 0;
+
+    // Move the snake in all four directions every 50ms
+    setInterval(() => {
+      conn.write(moves[moveIndex]);
+      moveIndex = (moveIndex + 1) % moves.length;
+    }, 50);
   });
 
   return conn;
