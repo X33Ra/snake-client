@@ -22,6 +22,15 @@ const handleUserInput = function(key, connection) {
     console.log('User Has Left The Channel');
     // Check for Ctrl + C input (ASCII code 3) and terminate the game
     process.exit();
+  } else if (key === '1') {
+    console.log('Hello Everyone!');
+    connection.write('Hello Everyone!'); // Send a canned message command to the server
+  } else if (key === '2') {
+    console.log('Good Job!');
+    connection.write('Good Job!'); // Send a canned message command to the server
+  } else if (key === '3') {
+    console.log('Boo!');
+    connection.write('Boo!'); // Send a canned message command to the server
   }
 };
 
