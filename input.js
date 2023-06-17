@@ -44,13 +44,5 @@ const setupInput = function(connection) {
   return stdin;
 };
 
-
-
-
-
-
-
-
-
 module.exports = {setupInput};
 // second rule
