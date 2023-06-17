@@ -6,7 +6,7 @@ const connection = connect();
 setupInput(connection, handleUserInput);
 
 
-
+// WORK IN PRGRESS, SHOO!
 // } else if (key === 'l') {
 //   console.log('Sending message: LOL');
 //   connection.write('Say: LOL'); // Send a canned message to the server
