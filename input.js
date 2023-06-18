@@ -36,4 +36,4 @@ const setupInput = function(connection) {
   return stdin;
 };
 
-module.exports = {setupInput};
+module.exports = { setupInput };
