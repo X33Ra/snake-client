@@ -5,16 +5,12 @@
 // setup interface to handle user input from stdin
 const handleUserInput = function(key, connection) {
   if (key === 'w') {
-    console.log('Move: up');
     connection.write('Move: up');
   } else if (key === 'a') {
-    console.log('Move: left');
     connection.write('Move: left');
   } else if (key === 's') {
-    console.log('Move: down');
     connection.write('Move: down');
   } else if (key === 'd') {
-    console.log('Move: right');
     connection.write('Move: right');
   } else if (key === '\u0003') {
     console.log('User Has Left The Channel');
@@ -22,13 +18,10 @@ const handleUserInput = function(key, connection) {
     process.exit();
     // Special keys
   } else if (key === '1') {
-    console.log('Hello Everyone!');
     connection.write('Hello Everyone!');
   } else if (key === '2') {
-    console.log('Good Job!');
     connection.write('Good Job!');
   } else if (key === '3') {
-    console.log('Boo!');
     connection.write('Boo!');
   }
 };
