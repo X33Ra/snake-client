@@ -18,11 +18,11 @@ const handleUserInput = function(key, connection) {
     process.exit();
     // Special keys
   } else if (key === '1') {
-    connection.write('Hello Everyone!');
+    connection.write('Say: Hello Everyone!');
   } else if (key === '2') {
-    connection.write('Good Job!');
+    connection.write('Say: Good Job!');
   } else if (key === '3') {
-    connection.write('Boo!');
+    connection.write('Say: Boo!');
   }
 };
 
@@ -36,4 +36,4 @@ const setupInput = function(connection) {
   return stdin;
 };
 
-module.exports = { setupInput };
+module.exports = {setupInput};
