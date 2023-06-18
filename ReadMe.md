@@ -8,8 +8,8 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 
-![UWU.png](#)
-!["screenshot description"](#)
+![UWU.png](https://github.com/X33Ra/snake-client/blob/master/UWU.png)
+
 
 
 ## Getting Started
